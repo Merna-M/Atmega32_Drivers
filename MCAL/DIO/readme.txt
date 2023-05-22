@@ -1,0 +1,1 @@
+يوجد درايفر به set_low_nibble & set_high_nibbleفي درايفر lcd 
