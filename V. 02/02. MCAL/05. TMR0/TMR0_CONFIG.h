@@ -1,0 +1,49 @@
+/*
+ * TMR0_CONFIG.h
+ *
+ * Created: 10/23/2023 11:44:04 AM
+ *  Author: MERNA
+ */ 
+
+
+#ifndef TMR0_CONFIG_H_
+#define TMR0_CONFIG_H_
+
+/*
+TMR0_MODE options:
+
+1. TMR0_NORMAL_MODE
+2. TMR0_CTC_MODE
+3. TMR0_FAST_PWM_MODE
+4. TMR0_PHASE_CORRECT_MODE
+*/
+#define TMR0_MODE					TMR0_PHASE_CORRECT_MODE
+
+/*
+TMR0_PRESCALAR options:
+
+1. TMR0_PRESCALAR_1
+2. TMR0_PRESCALAR_8
+3. TMR0_PRESCALAR_64
+4. TMR0_PRESCALAR_256
+5. TMR0_PRESCALAR_1024
+*/
+#define TMR0_PRESCALAR				TMR0_PRESCALAR_64
+
+/*
+TMR0_PWM_MODE options:
+
+1. TMR0_PWM_INVERTING
+2. TMR0_PWM_NONINVERTING
+*/
+#define TMR0_PWM_MODE				TMR0_PWM_NONINVERTING
+
+
+#define TMR0_PRELOAD_VALUE			113
+
+#define TMR0_OVF_COUNTER			488 // this value is for F_CPU = 8000000 , prescalar = 64 , the time = 1 sec.
+#define TMR0_COMP_COUNTER			124 // this value is for F_CPU = 8000000 , prescalar = 64 , the time = 1 msec.
+
+
+
+#endif /* TMR0_CONFIG_H_ */

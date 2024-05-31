@@ -1,0 +1,49 @@
+/*
+ * SPI_CONFIG.h
+ *
+ * Created: 10/30/2023 10:19:05 AM
+ *  Author: MERNA
+ */ 
+
+
+#ifndef SPI_CONFIG_H_
+#define SPI_CONFIG_H_
+
+/*
+Select Mode
+Options:
+1. SPI_MASTER
+2. SPI_SLAVE
+*/
+#define SPI_MODE			SPI_SLAVE
+
+/*
+Prescalar Select
+Options:
+1. SPI_PRESCALAR_4
+2. SPI_PRESCALAR_16
+3. SPI_PRESCALAR_64
+4. SPI_PRESCALAR_128
+5. SPI_PRESCALAR_2
+6. SPI_PRESCALAR_8
+7. SPI_PRESCALAR_32
+8. SPI_PRESCALAR_64
+*/
+#define SPI_PRESCALAR				SPI_PRESCALAR_16
+
+/*
+Data Order
+Options:
+1. SPI_LSB_ORDER
+2. SPI_MSB_ORDER
+*/
+#define SPI_DATA_ORDER				SPI_LSB_ORDER
+
+/*
+Synchronous asynchronous:
+Options:
+1. SPI_ACTIVE_SYNCH
+2. SPI_ACTIVE_ASYNCH
+*/
+#define SPI_SYNCHRONOUS_ACTIVE		SPI_ACTIVE_ASYNCH
+#endif /* SPI_CONFIG_H_ */

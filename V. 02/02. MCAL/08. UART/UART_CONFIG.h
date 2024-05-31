@@ -1,0 +1,23 @@
+/*
+ * UART_CONFIG.h
+ *
+ * Created: 10/28/2023 1:20:12 PM
+ *  Author: MERNA
+ */ 
+
+
+#ifndef UART_CONFIG_H_
+#define UART_CONFIG_H_
+
+#define UART_BAUD_RATE					9600
+#define UART_UBRR_VALUE					103
+
+#define UART_TX_ENABLE					UART_ENABLE
+#define UART_RX_ENABLE					UART_ENABLE
+
+#define UART_TX_INTERRUPT				UART_DISABLE
+#define UART_RX_INTERRUPT				UART_ENABLE
+
+#define UART_CHAR_SELECT				UART_CHAR_SIZE_8
+
+#endif /* UART_CONFIG_H_ */
